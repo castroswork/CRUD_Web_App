@@ -1,0 +1,241 @@
+
+/* GENERAL */
+
+
+html {
+    height:100%;
+  }
+  
+* {
+    line-height: 1.6;
+    font-family: 'Karla', sans-serif;
+  }
+body {
+    background-color: white ;
+    background-attachment:fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    
+    
+}
+
+img {
+    height: 250px;
+    width: 100%;
+
+}
+
+
+
+h3
+    { color: #d54d7b; 
+        font-family: "Great Vibes", cursive; 
+        font-size: 50px;
+        font-weight: normal; 
+        margin-bottom: 50px; 
+        text-align: center; 
+        text-shadow: 0 1px 1px #fff; }
+
+main {
+    -webkit-transform: scale(0.67);
+       -moz-transform: scale(0.67);
+            transform: scale(0.67);
+}
+
+/* STRUCTURE */
+
+.new-note {
+    margin-bottom: 30px;
+    background-color: transparent;
+    border: 1px solid #A9DFBF ;
+    border-radius: 6px;
+    position: relative;
+    padding: 16px;
+  }
+
+  .new-note input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 0 0 12px;
+  }
+  .new-note textarea {
+    display: block;
+    width: 100%;
+    min-height: 100px;
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 0;
+  }
+  #form-error {
+    color: #b33030;
+    position: absolute;
+    bottom: -32px;
+    left: 0;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+  }
+  .add-btn {
+    border: 1px solid #A9DFBF ;
+    color: rgb(95, 95, 95);
+    background-color: #A9DFBF ;
+    border-radius: 16px;
+    cursor: pointer;
+    padding: 8px 12px;
+  }
+  .add-btn:hover {
+    background-color: #EAFAF1;
+  }
+  #notes-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .note {
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    border: 1px solid #A9DFBF ;
+    border-radius: 6px;
+    padding: 16px;
+  }
+  
+  .note > *[contenteditable="true"] {
+    color: rgb(95, 95, 95);
+    width: 100%;
+    outline: none;
+  }
+  
+  .note-title {
+    color: rgb(95, 95, 95);
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 12px;
+    width: 100%;
+    display: inline-block;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+  }
+  
+  .note-title:last-child {
+    margin-bottom: 0;
+  }
+  
+  .note-text {
+    margin-bottom: 16px;
+    color: rgb(95, 95, 95);
+    background-color: white;
+    width: 100%;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .note-date {
+    color:rgb(95, 95, 95);
+    font-size: 0.75em;
+    text-align: right;
+    border-top: 1px solid #dadada;
+    padding-top: 16px;
+    width: 100%;
+    margin-top: auto;
+  }
+  
+  .note-controls {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: white;
+    font-size: 0.75rem;
+    column-gap: 8px;
+    padding: 8px;
+    display: flex;
+    opacity: 0;
+    transition: opacity 350ms;
+  }
+  
+  .note:hover .note-controls,
+  .note-controls:focus-within {
+    opacity: 1;
+  }
+  
+  .note-controls button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+  
+  .note-controls button:hover {
+    filter: brightness(0.85)
+  }
+  
+  .note-delete {
+    color: #bb0000;
+  }
+  
+  .note-edit {
+    color: #00bb00;
+  }
+  
+  .note-save {
+    color: #0000bb;
+  }
+  
+  .note-save[disabled="true"] {
+    color: #dfdfdf;
+    pointer-events: none;
+    user-select: none;
+    cursor: not-allowed;
+  }
+  
+  /* FOOTER */
+
+  .footer{
+    margin-top: 10px;
+    background: #A9DFBF  ;
+    padding-top:0;
+    padding-bottom:0;
+    padding-left:5px;
+    padding-right:5px;
+    font-family: 'Karla', sans-serif;
+    width: 100%;
+  }
+  
+  
+    
+  .footer .row{
+    width:90%;
+    margin: 1%;
+    padding:0.6% 0%;
+    color:white;
+    font-size:13px;
+  }
+    
+  .footer .row a{
+    text-decoration:none;
+    color:white;
+    transition:0.5s;
+    margin-left: 20px;
+  }
+    
+  .footer .row a:hover{
+    color:pink;
+  }
+    
+  .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+  }
