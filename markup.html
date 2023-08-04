@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="icon" type="image/x-icon" href="./images/noteIcon.png">
+  <link rel="stylesheet" href="./css/style.css">
+
+
+  <title>CRUD Web App</title>
+</head>
+
+<!-- MAIN -->
+<body>
+    <img src="images/paisaje.webp" alt="paisaje">
+    
+    <main>
+        <h3>Welcome to  your <span class="remark">note organization</span> space!</h3>
+        <div class="new-note">
+          <input type="text" name="title" id="title" placeholder="Title">
+          <textarea name="content" id="content" placeholder="Start writing"></textarea>
+          <div id="form-error"></div>
+        </div>
+        <div class="button-container">
+          <button class="add-btn" onclick="addNote()">Add note</button>
+        </div>
+        <div id="notes-wrapper"></div>
+      </main>
+
+
+
+<script  type="text/javascript" src="code.js"></script>
+<!--FOOTER-->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+
+<div class="footer">
+
+<div class="row">
+Contact me here: 
+</div>
+
+<div class="row">
+  <a href="https://linkedin.com/in/julia-castro-gonzalez-80ba50227"><i class="fa fa-linkedin"></i></a>
+  <a href="https://github.com/castroswork"><i class="fa fa-github"></i></a>
+</div>
+
+<div class="row" id ="coyright">
+<p>JCG Copyright © 2023 JCG - All rights reserved || Designed By: castroswork</p>
+</div>
+</div>
+
+</body>
+</html>
